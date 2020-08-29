@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Landing Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+header{
+
+background-image: url("corona.jpg");
+
+}
+</style>
+<body>
+<!--The CSS on this webpage is based off of a w3schools template-->
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="mapspage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Map</a>
+    <a href="scatterplotpage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Scatterplot Matrix</a>
+    <a href="linegraphpage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Line Graphs</a>
+    <a href="conclusionpage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Discussion & Conclusion</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="mapspage.html" class="w3-bar-item w3-button w3-padding-large">Map</a>
+    <a href="scatterplotpage.html" class="w3-bar-item w3-button w3-padding-large">Scatterplot Matrix</a>
+    <a href="linegraphpage.html" class="w3-bar-item w3-button w3-padding-large">Line Graphs</a>
+    <a href="conclusionpage.html" class="w3-bar-item w3-button w3-padding-large">Discussion & Conclusion</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:85px 16px">
+  <h1 class="w3-margin w3-text-white w3-jumbo">Coronavirus in the United States</h1>
+  <p class="w3-xlarge w3-text-white">by Annabel Winters-McCabe</p>
+</header>
+
+<!-- Text -->
+<div class="w3-row-padding w3-padding-54 w3-container">
+    <div class="w3-twothird">
+      <h5 class="w3-padding-20">This site uses interactive visualizations to explore the spread of COVID-19 throughout the United States, and particularly the effects of the delayed onset of widespread testing. This project is inspired by the constant Coronavirus coverage on the news, and the emphasis on lack of testing in the U.S. specifically. The difficulty of some states to acquire enough COVID-19 tests has been widely publicized, and through these visualizations I hope to understand the relationship between coronavirus testing, hospitalizations, and deaths from coronavirus. All data comes from the COVID Tracking project. I used this dataset because it is updated daily and includes information about daily increases as well as cumulative totals. Limitations of this set include not accounting for coronavirus related state-wide orders and other factors that could be effecting these numbers, and also some of the data categories lack explanation or are incomplete. This dataset also does not include population information for states, which would be helpful to have to put the numbers in perspective. </h5>
+      <a href="https://www.kaggle.com/sudalairajkumar/covid19-in-usa">Access the datasets on Kaggle here</a>
+      <h5> This webpage is up to date as of 5/13/2020</h5>
+    </div>
+</div>
+
+<!-- this was pulled from the w3schools template -->
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
